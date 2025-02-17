@@ -114,7 +114,7 @@ bool Graph<T>::containsBFS(T value) const {
 template <typename T>
 void Graph<T>::clear() {
     Node<T>* parrent = head_;
-    for (Node<T>* node: head_->nodes) {
+    for (Node<T>* node: parrent->nodes) {
         if (node == nullptr)
             continue;
         head_ = node;
